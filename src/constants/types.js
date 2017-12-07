@@ -1,0 +1,4 @@
+// Progress
+export const INITIALIZE_SESSION = "INITIALIZE_SESSION";
+export const UPDATE_STATUS = "UPDATE_STATUS";
+export const FINISH_SESSION = "FINISH_SESSION";

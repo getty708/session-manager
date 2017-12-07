@@ -1,0 +1,16 @@
+version: '2'
+services:
+  react:
+    build: ./docker
+    #command: /bin/bash
+    volumes:
+      - ./:/root
+    ports:
+      - "3333:3333"
+    tty: true
+  client:
+    image: httpd:latest
+    ports:
+      - "3030:80"
+    volumes:
+      - ./public:/usr/local/apache2/htdocs/
