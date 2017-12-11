@@ -7,7 +7,7 @@ const NewSessionBtn = ({actions}) => {
       <div className="col-6 offset-3">
         <button type="button"
           className="btn btn-primary btn-lg btn-block"
-          onClick={e => actions.initSession()} >Start New Sesion</button>
+          onClick={e => actions.initSession()} >Start New Session</button>
       </div>
   );
 }
