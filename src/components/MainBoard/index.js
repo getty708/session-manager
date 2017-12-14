@@ -3,21 +3,23 @@ import React from 'react';
 
 const MainBoard = ({gesture, onSession}) => {
   console.log("gesture@MainBoard", gesture);
-  const img_url = "./img/"+gesture.id+".jpg";
+  const link_img = gesture.img ? (
+    <div className="col-4">
+      <img src={gesture.img} width="100%" />
+    </div>
+  ): null;
   // console.log(img_url);
   return (
     <div className="jumbotron jumbotron-fluid">
     {
       onSession ?
         <div className="container row">
-          <div className="col-8">
+          <div className="col">
             <h1 className="display-1 text-center">{gesture.name}</h1>
             <hr className="my-4" />
             <p className="lead text-center">上に表示されるジェスチャを行ってください</p>
           </div>
-          <div className="col-4">
-            <img src={img_url} width="100%" />
-          </div>
+          {link_img}
         </div>
       :
         <div className="container row">
