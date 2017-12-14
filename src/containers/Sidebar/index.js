@@ -14,12 +14,14 @@ import {GESTURE_SET} from '../../constants/settings'
 class Sidebar extends React.Component {
   render() {
     const gestureObj = this.props.progress.gestureObj;
+    const numSession = this.props.progress.numSession;
     // console.log("Props@Sidebar", this.props);
     // console.log(gestureObj)
+    // console.log("session no:", numSession);
 
     return (
       <div>
-        <GestureList gestureObj={gestureObj} />
+        <GestureList gestureObj={gestureObj} numSession={numSession} />
       </div>
     );
   }
