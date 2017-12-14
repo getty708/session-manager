@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GestureList = ({gestureObj}) => {
+const GestureList = ({gestureObj, numSession}) => {
   // make <li>xxx</li>
   var list = []
   for(let key in gestureObj){
@@ -20,7 +20,7 @@ const GestureList = ({gestureObj}) => {
 
   return (
     <div className="card">
-      <div className="card-header h3">Gestures</div>
+      <div className="card-header h3">Gestures <small className="text-muted" >(Session: {`${numSession}`})</small></div>
       <ul className="list-group list-group-flush">
         {list}
       </ul>

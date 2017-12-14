@@ -49,6 +49,7 @@ const initialState = {
   current_gesture: 0,
   isInit: false,
   onSession: false,
+  numSession: 0,
 };
 // console.log("initialState@progress", initialState);
 
@@ -65,6 +66,7 @@ const progressReducer = (state = initialState, action) => {
         current_gesture: 0,
         isInit: true,
         onSession: true,
+        numSession: state.numSession + 1,
       };
     case types.UPDATE_STATUS:
       console.log("Reducer: update status", action.new_status);
