@@ -39,8 +39,7 @@ const BackNextBtns = ({actions, isBack, isNext, isFinish}) => {
 
 const ControlPanel = ({actions, isNewSession, isBack, isNext, isFinish}) => {
   // console.log("actions@Control", actions);
-  console.log("isNewSession, isBack, isNext, isFinish@Control", isNewSession, isBack, isNext, isFinish);
-
+  // console.log("isNewSession, isBack, isNext, isFinish@Control", isNewSession, isBack, isNext, isFinish);
 
   return (
     <div className="row">
