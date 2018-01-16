@@ -18,15 +18,6 @@ export const GESTURE_SET = [
   {id: 17, name: 'tap sensor',     img: "./img/gestures/tap_sensor.jpg"},
   {id: 18, name: 'tap right',      img: "./img/gestures/tap_right.jpg"},
   {id: 19, name: 'tap hand',      img: "./img/gestures/tap_hand.jpg"},
-  {id: 21, name: 'flick left',     img: "./img/gestures/flick_left.jpg"},
-  {id: 22, name: 'flick right',    img: "./img/gestures/flick_right.jpg"},
-  {id: 23, name: 'pinch out',       img: "./img/gestures/pinch_in.jpg"},
-  {id: 24, name: 'pinch in',      img: "./img/gestures/pinch_out.jpg"},
-  {id: 25, name: 'tap arm',        img: "./img/gestures/tap_arm.jpg"},
-  {id: 26, name: 'tap left',       img: "./img/gestures/tap_left.jpg"},
-  {id: 27, name: 'tap sensor',     img: "./img/gestures/tap_sensor.jpg"},
-  {id: 28, name: 'tap right',      img: "./img/gestures/tap_right.jpg"},
-  {id: 29, name: 'tap hand',      img: "./img/gestures/tap_hand.jpg"},
 ]
 
 // Objects
